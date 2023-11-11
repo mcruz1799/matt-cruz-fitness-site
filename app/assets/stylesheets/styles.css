@@ -14,29 +14,83 @@ body {
     padding: 20px;
   }
   
-  nav {
+/* styles.css */
+
+/* Header Styles */
+header {
     background-color: #333;
     color: white;
     padding: 15px 0;
   }
   
-  nav ul {
-    list-style: none;
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-  nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    transition: color 0.3s;
+  .logo img {
+    max-height: 100px; /* Adjust the height as needed */
   }
   
-  nav a:hover {
-    color: #f00;
+  .nav-links {
+    list-style: none;
+    display: flex;
   }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .cta-button {
+    background-color: #f00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  /* Hamburger Menu Styles */
+  .hamburger-menu {
+    display: none; /* Hide by default for larger screens */
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+  }
+  
+  /* Media Query for Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hide regular navigation links for smaller screens */
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px; /* Adjust the top margin as needed */
+      left: 0;
+      background-color: #333;
+    }
+  
+    .nav-links.show {
+      display: flex; /* Show navigation links when the menu is active */
+    }
+  
+    .hamburger-menu {
+      display: flex; /* Show hamburger menu for smaller screens */
+    }
+  }
+  
   
   /* Add more styles as needed */
   
