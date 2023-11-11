@@ -18,47 +18,54 @@ body {
 
 /* Header Styles */
 header {
-    background-color: white;
-    color: white;
-    padding: 15px 0;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo img {
-    max-height: 200px; /* Adjust the height as needed */
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin-right: 20px;
-  }
-  
-  .nav-links a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-  }
+  background-color: white;
+  color: white;
+  padding: 15px 0;
+}
 
-  .nav-links :hover{
-    color: red;
-  }
-  
-  .cta-button {
-    background-color: #f00;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-  }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex; /* Add this to create a flex container for the logo */
+  align-items: center; /* Center items vertically within the logo container */
+}
+
+.logo img {
+  max-height: 200px; /* Adjust the height as needed */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0; /* Reset margin to remove any default margin */
+  padding: 0; /* Reset padding to remove any default padding */
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: red;
+}
+
+.cta-button {
+  background-color: #f00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
   
   /* Hamburger Menu Styles */
   .hamburger-menu {
@@ -70,7 +77,7 @@ header {
   .bar {
     width: 30px;
     height: 3px;
-    background-color: white;
+    background-color: black;
     margin: 6px 0;
   }
   
