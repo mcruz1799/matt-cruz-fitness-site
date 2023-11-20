@@ -173,7 +173,27 @@ header {
     font-size: 1.2em; /* Adjust the font size as needed */
   }
   
-  
+  /* What's In Store Section Styles */
+.whats-in-store {
+  background-color: #f9f9f9;
+  padding: 80px 20px; /* Adjust the padding as needed */
+  text-align: center;
+}
+
+.whats-in-store h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.whats-in-store ul {
+  list-style: none;
+  padding: 0;
+}
+
+.whats-in-store li {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
   
   
   
