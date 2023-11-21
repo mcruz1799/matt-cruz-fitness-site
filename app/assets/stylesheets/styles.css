@@ -212,11 +212,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .slick-carousel .testimonial {
   text-align: center;
   padding: 20px;
+  width: 500px;
 }
 
 .slick-carousel img {
