@@ -11,18 +11,22 @@
   
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- Add this script within the head tag, below your existing Slick Carousel script -->
   <script>
-  $(document).ready(function(){
-    $('.slick-carousel').slick({
-      slidesToShow: 1, // Show one testimonial at a time
-      slidesToScroll: 1, // Scroll one testimonial at a time
-      autoplay: true, // Autoplay if needed
-      autoplaySpeed: 2000, // Autoplay speed in milliseconds (adjust as needed)
-      // Add other settings as needed
+    $(document).ready(function(){
+      $('.slick-carousel').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        dots: true,
+        autoplaySpeed: 2000,
+        prevArrow: false,
+        nextArrow: false,
+        // Add other settings as needed
+      });
     });
-  });
-
-</script>
+  </script>
+  
 
   <title>Matt Cruz Fitness</title>
 
@@ -145,19 +149,19 @@
           
           <div class="testimonial">
             <%= image_tag 'sample2.jpeg', alt: "Client 2's Transformation" %>
-            <p><strong>Client 2</strong></p>
+            <p><strong>Client 3</strong></p>
             <p>Matts guidance changed my life!</p>
           </div>
 
           <div class="testimonial">
             <%= image_tag 'sample2.jpeg', alt: "Client 2's Transformation" %>
-            <p><strong>Client 2</strong></p>
+            <p><strong>Client 4</strong></p>
             <p>Matts guidance changed my life!</p>
           </div>
 
           <div class="testimonial">
             <%= image_tag 'sample2.jpeg', alt: "Client 2's Transformation" %>
-            <p><strong>Client 2</strong></p>
+            <p><strong>Client 5</strong></p>
             <p>Matts guidance changed my life!</p>
           </div>
           <!-- Add more testimonials as needed -->
