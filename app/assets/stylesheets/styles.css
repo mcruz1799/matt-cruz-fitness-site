@@ -218,13 +218,16 @@ header {
 .slick-carousel .testimonial {
   text-align: center;
   padding: 20px;
-  width: 500px;
+  width: 50px;
 }
 
 .slick-carousel img {
-  max-width: 100%;
-  border-radius: 50%; /* Make images circular */
+  max-width: 100%; /* Adjust as needed */
+  max-height: 300px; /* Adjust as needed */
+  margin: 0 auto; /* Center the image horizontally */
+  display: block; /* Remove any default inline styles that might affect alignment */
 }
+
 
 .slick-prev, .slick-next {
   font-size: 24px;
@@ -259,7 +262,7 @@ header {
   color: #fff;
 }
 
-  
+
   
   
   
