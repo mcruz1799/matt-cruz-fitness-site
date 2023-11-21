@@ -221,21 +221,27 @@ header {
   width: 50px;
 }
 
+/* Update styles for the testimonial content */
+.testimonial {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial img {
+  max-width: 100px; /* Adjust the image width as needed */
+  margin-right: 20px; /* Add space between image and text */
+}
+
+.testimonial p {
+  flex-grow: 1; /* Allow text to take remaining width */
+}
+
+
 .slick-carousel img {
   max-width: 100%; /* Adjust as needed */
   max-height: 300px; /* Adjust as needed */
   margin: 0 auto; /* Center the image horizontally */
   display: block; /* Remove any default inline styles that might affect alignment */
-}
-
-
-.slick-prev, .slick-next {
-  font-size: 24px;
-  color: #333;
-}
-
-.slick-prev:hover, .slick-next:hover {
-  color: #f00;
 }
 
 /* Optional: Add dots for navigation */
@@ -262,26 +268,9 @@ header {
   color: #fff;
 }
 
-/* Add this to your existing CSS */
-.slick-prev,
-.slick-next {
-  font-size: 24px;
-  color: white;
-  background-color: #f00; /* Adjust the background color as needed */
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
-.slick-prev:hover,
-.slick-next:hover {
-  background-color: #d00; /* Adjust the background color on hover as needed */
-}
 
 
   
   
-  
-  /* Add more styles as needed */
   
