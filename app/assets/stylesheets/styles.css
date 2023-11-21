@@ -194,6 +194,69 @@ header {
   font-size: 1.2em;
   margin-bottom: 15px;
 }
+
+
+/* Testimonials Section Styles */
+.testimonials {
+  background-color: #fff;
+  padding: 80px 20px;
+}
+
+.testimonials h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+/* Slick Carousel Styles */
+.slick-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-carousel .testimonial {
+  text-align: center;
+  padding: 20px;
+}
+
+.slick-carousel img {
+  max-width: 100%;
+  border-radius: 50%; /* Make images circular */
+}
+
+.slick-prev, .slick-next {
+  font-size: 24px;
+  color: #333;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  color: #f00;
+}
+
+/* Optional: Add dots for navigation */
+.slick-dots {
+  text-align: center;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  font-size: 12px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #333;
+  cursor: pointer;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #f00;
+  color: #fff;
+}
+
   
   
   

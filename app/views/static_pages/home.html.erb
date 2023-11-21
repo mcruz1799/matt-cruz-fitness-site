@@ -8,6 +8,20 @@
   <link rel="stylesheet" href="styles.css"> <!-- Link to your main styles file -->
   <title>Matt Cruz Fitness</title>
 </head>
+
+<script>
+  $(document).ready(function(){
+    $('.slick-carousel').slick({
+      // Slick Carousel options go here
+      // For example, you can set autoplay, arrows, dots, etc.
+      autoplay: true,
+      autoplaySpeed: 3000,
+      dots: true,
+      arrows: false
+    });
+  });
+</script>
+
 <body>
 
     <!-- Header -->
@@ -102,14 +116,31 @@
       </div>
     </section>
   
-    <!-- Testimonials Section -->
+    <!-- Testimonials Section with Slick Carousel -->
     <section id="testimonials" class="testimonials">
-        <div class="container">
+      <div class="container">
         <h2>What My Clients Say</h2>
-        <!-- Add client testimonials -->
+    
+        <!-- Slick Carousel -->
+        <div class="slick-carousel">
+          <div class="testimonial">
+            <%= image_tag 'sample.jpeg', alt: "Client 1's Transformation" %>
+            <p><strong>Client 1</strong></p>
+            <p>I achieved amazing results with Matt!</p>
+          </div>
+    
+          <div class="testimonial">
+            <%= image_tag 'sample2.jpeg', alt: "Client 2's Transformation" %>
+            <p><strong>Client 2</strong></p>
+            <p>Matts guidance changed my life!</p>
+          </div>
+    
+          <!-- Add more testimonials as needed -->
+    
         </div>
+      </div>
     </section>
-
+    
     <!-- Blog Section -->
     <section id="blog" class="blog">
         <div class="container">
@@ -132,6 +163,9 @@
         <p>&copy; 2023 Your Fitness. All rights reserved.</p>
         </div>
     </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </body>
 </html>
