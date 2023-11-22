@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link rel="stylesheet" href="styles.css"> <!-- Link to your main styles file -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="slick.css"/>
   
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -15,15 +15,12 @@
   <script>
     $(document).ready(function(){
       $('.slick-carousel').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: false,
         dots: true,
-        autoplaySpeed: 2000,
-        prevArrow: false,
-        nextArrow: false,
-        // Add other settings as needed
-      });
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+
+      })
     });
   </script>
   
@@ -138,13 +135,14 @@
           <div class="testimonial">
             <%= image_tag 'johnny.jpg', alt: "Client 1's Transformation" %>
             <p><strong>Johnny</strong></p>
-            <p>Before starting I often felt pretty sluggish and depressed. My lack of diet strategy and habitual exercise left me brain-fogged and I found it hard to get to the gym since I didn’t feel confident in structuring my own workouts.
+            <p>Before starting I often felt pretty sluggish and depressed. My lack of diet strategy and habitual exercise left me brain-fogged and I found it hard to get to the gym since I didn’t feel confident in structuring my own workouts.</p>
 
-            I was looking for a push and some educated guidance and I feel like MCF’s program has been exactly what I needed. The confidence boost of going into every day with a plan has been a great motivator.
-            
-            Coach Matt is also there literally every step of the way, super responsive, helpful, and flexible to answer my questions, meet my needs, and tailor the program specifically to me.
-            
-            I’m not gonna lie, I’ve been seeing results a lot faster and more evidently than I ever have before. I never tried to take pictures of my body at different timepoints, one because it felt vain and two because I was pessimistic about seeing any results. Matt has been persistent with getting me to track myself regularly, which has helped me notice changes in body shape which have been really amazing to see. Even more importantly, I’m loving my improved physical and mental performance as a result of consistent workouts and intelligent eating. I’ve felt more confident than I possibly ever have. All that’s to say I’m proud of where I’m at already and I’m only just over a month in.</p>
+            <p>I was looking for a push and some educated guidance and I feel like MCF’s program has been exactly what I needed. The confidence boost of going into every day with a plan has been a great motivator.</p>
+
+            <p>Coach Matt is also there literally every step of the way, super responsive, helpful, and flexible to answer my questions, meet my needs, and tailor the program specifically to me.</p>
+
+            <p>I’m not gonna lie, I’ve been seeing results a lot faster and more evidently than I ever have before. I never tried to take pictures of my body at different timepoints, one because it felt vain and two because I was pessimistic about seeing any results. Matt has been persistent with getting me to track myself regularly, which has helped me notice changes in body shape which have been really amazing to see. Even more importantly, I’m loving my improved physical and mental performance as a result of consistent workouts and intelligent eating. I’ve felt more confident than I possibly ever have. All that’s to say I’m proud of where I’m at already and I’m only just over a month in.</p>
+
           </div>
     
           <div class="testimonial">

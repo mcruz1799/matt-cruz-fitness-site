@@ -216,7 +216,6 @@ header {
 }
 
 .slick-carousel .testimonial {
-  text-align: center;
   padding: 20px;
   width: 50px;
 }
@@ -234,6 +233,11 @@ header {
 
 .testimonial p {
   flex-grow: 1; /* Allow text to take remaining width */
+  text-align: left;
+}
+
+.testimonial strong{
+  text-align: center;
 }
 
 
