@@ -102,23 +102,30 @@ header {
     }
   }
   
+
+  
   /* Hero Section Styles */
-.hero {
-    background-image: url('hero-image.jpg'); /* Replace with the path to your hero image */
-    background-size: cover;
-    background-position: center;
-    color: black;
-    text-align: center;
-    padding: 100px 20px; /* Adjust the padding as needed */
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This ensures the hero section takes up the full height of the viewport */
   }
   
   .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
+    display: flex;
   }
+
+  .hero-image {
+    height: 500px; 
+    width: auto;
+    margin-right: 20px; /* Adjust the margin as needed */
+  }
+
   
   .hero h1 {
-    font-size: 2.5em; /* Adjust the font size as needed */
+    font-size: 5em; /* Adjust the font size as needed */
     margin-bottom: 20px;
   }
   
