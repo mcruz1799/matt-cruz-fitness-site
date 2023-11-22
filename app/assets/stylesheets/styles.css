@@ -20,7 +20,7 @@ body {
 header {
   background-color: white;
   color: white;
-  padding: 15px 0;
+  padding: 15px 50px;
 }
 
 .navbar {
@@ -59,7 +59,7 @@ header {
   color: red;
 }
 
-.cta-button {
+.navbar .cta-button {
   background-color: #f00;
   color: white;
   padding: 10px 20px;
@@ -106,15 +106,21 @@ header {
   
   /* Hero Section Styles */
 
-  .hero {
+  .hero .hero-container{
+    padding: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 100vh; /* This ensures the hero section takes up the full height of the viewport */
+    /* border: 15px solid green; */
   }
+
   
   .hero-content {
     display: flex;
+    margin: auto;
+    padding: 0 100px;
+    /* border: 15px solid black; */
   }
 
   .hero-image {
@@ -125,7 +131,7 @@ header {
 
   
   .hero h1 {
-    font-size: 5em; /* Adjust the font size as needed */
+    font-size: 4em; /* Adjust the font size as needed */
     margin-bottom: 20px;
   }
   
@@ -133,15 +139,26 @@ header {
     font-size: 1.2em; /* Adjust the font size as needed */
     margin-bottom: 30px;
   }
-  
-  .cta-button {
-    display: inline-block;
-    background-color: #f00;
+
+  .hero-content .text-container{
+    display: flex;
+    flex-direction: column;
+    /* background-color: lightblue; */
+  }
+
+  .hero .cta-button {
+    text-align: center;
+    background-color: red;
+    margin: 50px 100px 0;
+    padding: 10px;
     color: white;
-    padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.2em; /* Adjust the font size as needed */
+    font-size: 2em;
+  }
+
+  .hero .cta-button:hover{
+    color: goldenrod;
   }
 
   /* Pain Section Styles */
@@ -170,7 +187,7 @@ header {
     margin-bottom: 30px;
   }
   
-  .cta-button {
+  .pain .cta-button {
     display: inline-block;
     background-color: #f00;
     color: white;
