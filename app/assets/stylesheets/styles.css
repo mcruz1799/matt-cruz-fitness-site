@@ -248,29 +248,8 @@ header {
   display: block; /* Remove any default inline styles that might affect alignment */
 }
 
-/* Optional: Add dots for navigation */
-.slick-dots {
-  text-align: center;
-}
 
-.slick-dots li {
-  display: inline-block;
-  margin: 0 5px;
-}
 
-.slick-dots li button {
-  font-size: 12px;
-  border: 2px solid #333;
-  border-radius: 50%;
-  background-color: transparent;
-  color: #333;
-  cursor: pointer;
-}
-
-.slick-dots li.slick-active button {
-  background-color: #f00;
-  color: #fff;
-}
 
 
 
