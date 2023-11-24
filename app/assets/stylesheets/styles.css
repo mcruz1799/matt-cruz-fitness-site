@@ -83,20 +83,13 @@ header {
 
 
   .hero {
-    padding: 0 10%;
+    /* padding: 0 10%; */
+    margin: 0 10%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh; /* This ensures the hero section takes up the full height of the viewport */
     border: 5px solid green;
-  }
-
-  
-  .hero-content {
-    display: flex;
-    margin: auto;
-    padding: 0;
-    border: 15px solid red;
   }
 
   .hero-image {
