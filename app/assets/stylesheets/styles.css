@@ -105,7 +105,7 @@ header {
   }
   
   .hero p {
-    font-size: 1.2em; /* Adjust the font size as needed */
+    font-size: 2em; /* Adjust the font size as needed */
     margin-bottom: 5%;
   }
 
@@ -133,6 +133,16 @@ header {
    /* Media Query for Mobile Responsiveness */
   @media (max-width: 768px) {
     .hero h1{
+      font-size: 2em;
+    }
+    .hero p{
+      font-size: 1em;
+    }
+    .hero-image{
+      height: 50%;
+    }
+    .hero .cta-button{
+      
     }
   }
 
