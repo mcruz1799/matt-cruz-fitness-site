@@ -29,12 +29,12 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 0 100px;
-  background-color: beige;
+  height: 10vh;
 }
 
 .navbar img {
-  max-width: 30%; /* Adjust the height as needed */
-  max-height: auto;
+  max-height: 80%; /* Adjust the height as needed */
+  max-width: auto;
 }
 
 .nav-links {
