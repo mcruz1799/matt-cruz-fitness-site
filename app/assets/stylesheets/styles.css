@@ -29,15 +29,12 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 0 100px;
+  background-color: beige;
 }
 
-.logo {
-  display: flex; /* Add this to create a flex container for the logo */
-  align-items: center; /* Center items vertically within the logo container */
-}
-
-.logo img {
-  max-height: 200px; /* Adjust the height as needed */
+.navbar img {
+  max-width: 30%; /* Adjust the height as needed */
+  max-height: auto;
 }
 
 .nav-links {
@@ -55,6 +52,7 @@ header {
   color: black;
   text-decoration: none;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -67,23 +65,10 @@ header {
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
+  white-space: nowrap;
 }
   
-  /* Hamburger Menu Styles */
-  .hamburger-menu {
-    display: none; /* Hide by default for larger screens */
-    flex-direction: column;
-    cursor: pointer;
-  }
-  
-  .bar {
-    width: 30px;
-    height: 3px;
-    background-color: black;
-    margin: 6px 0;
-  }
-  
-  /* Media Query for Mobile Responsiveness */
+ /* Media Query for Mobile Responsiveness */
   @media (max-width: 768px) {
     .nav-links {
       display: none; /* Hide regular navigation links for smaller screens */
@@ -94,15 +79,30 @@ header {
       left: 0;
       background-color: #333;
     }
-  
+
     .nav-links.show {
       display: flex; /* Show navigation links when the menu is active */
     }
-  
+
     .hamburger-menu {
       display: flex; /* Show hamburger menu for smaller screens */
     }
+
+    .navbar {
+      margin: 0; /* Adjust margin for mobile layout */
+    }
+
+    .nav-links li {
+      margin-right: 0; /* Remove right margin for list items */
+      text-align: center; /* Center text in list items */
+      padding: 10px; /* Add padding for better touch interactions */
+    }
+
+    .navbar .cta-button {
+      margin: 10px 0; /* Adjust margin for better spacing */
+    }
   }
+
   
 
   
