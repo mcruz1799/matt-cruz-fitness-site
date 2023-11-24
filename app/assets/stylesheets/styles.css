@@ -83,30 +83,30 @@ header {
 
 
   .hero {
-    /* padding: 0 10%; */
-    margin: 0 10%;
+    padding: 0 10%;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh; /* This ensures the hero section takes up the full height of the viewport */
-    border: 5px solid green;
+    /* border: 5px solid green; */
   }
 
   .hero-image {
-    height: 500px; 
+    height: 80%; 
     width: auto;
-    margin-right: 20px; /* Adjust the margin as needed */
+    margin-right: 5%;
   }
 
   
   .hero h1 {
     font-size: 4em; /* Adjust the font size as needed */
-    margin-bottom: 20px;
+    margin-bottom: 2%;
   }
   
   .hero p {
     font-size: 1.2em; /* Adjust the font size as needed */
-    margin-bottom: 30px;
+    margin-bottom: 5%;
   }
 
   .hero-content .text-container{
@@ -133,7 +133,6 @@ header {
    /* Media Query for Mobile Responsiveness */
   @media (max-width: 768px) {
     .hero h1{
-      display: none;
     }
   }
 
