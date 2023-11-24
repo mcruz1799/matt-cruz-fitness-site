@@ -73,12 +73,6 @@ header {
     .nav-links{
       display: none;
     }
-
-    .navbar {
-    }
-
-    .navbar .cta-button {
-    }
   }
 
   
@@ -86,21 +80,23 @@ header {
   
   /* Hero Section Styles */
 
-  .hero .hero-container{
-    padding: 20px;
+
+
+  .hero {
+    padding: 0 10%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh; /* This ensures the hero section takes up the full height of the viewport */
-    /* border: 15px solid green; */
+    border: 5px solid green;
   }
 
   
   .hero-content {
     display: flex;
     margin: auto;
-    padding: 0 100px;
-    /* border: 15px solid black; */
+    padding: 0;
+    border: 15px solid red;
   }
 
   .hero-image {
@@ -139,6 +135,13 @@ header {
 
   .hero .cta-button:hover{
     color: goldenrod;
+  }
+
+   /* Media Query for Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .hero h1{
+      display: none;
+    }
   }
 
   /* Pain Section Styles */
