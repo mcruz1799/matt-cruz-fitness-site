@@ -72,7 +72,7 @@ header {
   @media (max-width: 768px) {
     .nav-links{
       display: none;
-    }
+    }cl
   }
 
   
@@ -88,7 +88,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* This ensures the hero section takes up the full height of the viewport */
+    height: 100vh; 
     /* border: 5px solid green; */
   }
 
@@ -118,11 +118,11 @@ header {
   .hero .cta-button {
     text-align: center;
     background-color: red;
-    margin: 50px 100px 0;
-    padding: 10px;
+    margin: 5% 0;
+    padding: 2%;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 2em;
   }
 
@@ -132,6 +132,9 @@ header {
 
    /* Media Query for Mobile Responsiveness */
   @media (max-width: 768px) {
+    .hero{
+      /* height: 90; */
+    }
     .hero h1{
       font-size: 2em;
     }
@@ -142,7 +145,8 @@ header {
       height: 50%;
     }
     .hero .cta-button{
-      
+      font-size: 1em;
+      border-radius: 5px;
     }
   }
 
@@ -150,15 +154,20 @@ header {
   
   .pain {
     color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 100px 0px;
-    /* border: 5px solid grey; */
+    height: 100vh;
+    margin: auto;
+    border: 5px solid grey;
   }
   
   .pain-content {
     display: flex;
-    /* max-width: 800px; */
     margin: 0 auto;
+    border: 5px solid red;
   }
 
   .pain-image {
