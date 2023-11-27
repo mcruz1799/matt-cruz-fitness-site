@@ -20,7 +20,6 @@ body {
 header {
   background-color: white;
   color: white;
-  /* padding: 15px 50px; */
   margin: 0;
 }
 
@@ -102,6 +101,7 @@ header {
   .hero h1 {
     font-size: 4em; /* Adjust the font size as needed */
     margin-bottom: 2%;
+    min-width: 100%;
   }
   
   .hero p {
@@ -133,16 +133,18 @@ header {
    /* Media Query for Mobile Responsiveness */
   @media (max-width: 768px) {
     .hero{
-      /* height: 90; */
+      height: 80vh;
     }
     .hero h1{
-      font-size: 2em;
+      font-size: 1.5em;
     }
     .hero p{
       font-size: 1em;
     }
     .hero-image{
-      height: 50%;
+      /* height: 40%; */
+      max-width: 50%;
+      height: auto;
     }
     .hero .cta-button{
       font-size: 1em;
