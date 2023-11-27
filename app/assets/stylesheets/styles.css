@@ -32,7 +32,7 @@ header {
 }
 
 .navbar img {
-  max-height: 80%; /* Adjust the height as needed */
+  max-height: 80%;
   max-width: auto;
 }
 
@@ -71,11 +71,9 @@ header {
   @media (max-width: 768px) {
     .nav-links{
       display: none;
-    }cl
+    }
+
   }
-
-  
-
   
   /* Hero Section Styles */
 
@@ -87,7 +85,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; 
+    height: 90vh; 
     /* border: 5px solid green; */
   }
 
@@ -95,6 +93,8 @@ header {
     height: 80%; 
     width: auto;
     margin-right: 5%;
+    /* border: 5px solid red; */
+
   }
 
   
@@ -109,10 +109,10 @@ header {
     margin-bottom: 5%;
   }
 
-  .hero-content .text-container{
+  .hero-text-container{
     display: flex;
     flex-direction: column;
-    /* background-color: lightblue; */
+    /* border: 2px dashed orange; */
   }
 
   .hero .cta-button {
@@ -133,22 +133,29 @@ header {
    /* Media Query for Mobile Responsiveness */
   @media (max-width: 768px) {
     .hero{
-      height: 80vh;
+      /* height: auto; */
+      flex-direction: column-reverse;
+    }
+    .hero-text-container {
+      padding: 0;
+      min-height: 0;
+      /* border: 5px solid #f00; */
     }
     .hero h1{
-      font-size: 1.5em;
+      font-size: 3.5em;
     }
     .hero p{
-      font-size: 1em;
+      font-size: 1.2em;
     }
     .hero-image{
-      /* height: 40%; */
-      max-width: 50%;
-      height: auto;
+      width: auto;
+      height: 40%;
     }
+    
     .hero .cta-button{
-      font-size: 1em;
+      font-size: 2em;
       border-radius: 5px;
+      padding: 4%;
     }
   }
 
