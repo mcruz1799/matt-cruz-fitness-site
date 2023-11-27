@@ -130,7 +130,7 @@ header {
     color: goldenrod;
   }
 
-   /* Media Query for Mobile Responsiveness */
+   /* Media Query for Mobile Screens */
   @media (max-width: 768px) {
     .hero{
       /* height: auto; */
@@ -150,6 +150,7 @@ header {
     .hero-image{
       width: auto;
       height: 40%;
+      min-height: 0;
     }
     
     .hero .cta-button{
@@ -169,6 +170,7 @@ header {
     justify-content: center;
     height: 100vh;
     margin: auto 10%;
+    /* border: 5px dashed green; */
   }
   
   .pain-content {
@@ -176,8 +178,11 @@ header {
     align-items: center;
     justify-content: center;
     max-height: 70%;
+    /* border: 5px dashed red; */
+
 
   }
+
 
   .pain-image {
     height: 40%;
@@ -188,11 +193,15 @@ header {
   .pain-text-container{
     text-align: left;
     /* max-height: 100%; */
+    /* border: 5px dashed yellow; */
+
   }
   
   .pain-headers-container{
     /* margin: auto; */
     text-align: center;
+    /* border: 5px dashed blue; */
+
   }
   .pain h1 {
     font-size: 2.5em; /* Adjust the font size as needed */
@@ -221,20 +230,35 @@ header {
     margin: 0;
   }
 
-
   @media (max-width: 768px) {
+    .pain{
+      margin: auto 5%;
+    }
+
+    .pain-content{
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .pain-text-container{
+      max-height: 100%;
+    }
+    .pain-headers-container{
+
+    }
     .pain h1 {
-      font-size: 1.5em; /* Adjust the font size as needed */
+      /* font-size: 1.5em; Adjust the font size as needed */
     /* margin-bottom: 20px; */
     }
     
     .pain p {
-      font-size: 1em; /* Adjust the font size as needed */
+      /* font-size: 1em; Adjust the font size as needed */
       /* margin-bottom: 30px; */
     }
 
     .pain-image {
-      height: 20%;
+      /* height: 20%; */
+      display: none;
     }
     .pain h3{
       font-size: 1.5em;
