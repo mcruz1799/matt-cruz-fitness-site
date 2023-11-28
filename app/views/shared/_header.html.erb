@@ -1,0 +1,17 @@
+<!-- app/views/shared/_header.html.erb -->
+
+<header>
+  <nav class="navbar">
+    <%= image_tag 'logo.png', alt: 'Your Logo' %>
+    
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+      <li><%= link_to 'Home', '#hero' %></li>
+      <li><%= link_to 'About Me', '#about' %></li>
+      <li><%= link_to 'Testimonials', '#testimonials' %></li>
+    </ul>
+    
+    <!-- Call-to-Action Button -->
+    <%= link_to 'Get Started', '#', class: 'cta-button' %>
+  </nav>
+</header>
