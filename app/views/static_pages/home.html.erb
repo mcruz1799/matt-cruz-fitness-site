@@ -96,30 +96,33 @@
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="about-container">
-          <div class="about-text-container">
-            <h2><%="Hi I'm Matt"%> </h2>
-            <h3>And I know you can do this.</h3>
-
-            <p><%="I'm not here to sell you on the latest fad diet. I'm not here to put you on a 6 week beach body workout plan. I'm here to get you results that will last."%></p>
-            <p>Some things you should know about me</p>
-
-            <ul>
-                <li><p><%="I'm a NASM certified personal trainer"%></p></li>
-                <li><p><%="I'm an amateur natural bodybuilder"%></p></li>
-                <li><p><%="I've been lifting for the past 10 years"%></p></li>
-                <li><p><%="I was a collegiate offensive tackle at Carnegie Mellon University"%></p></li>
-                <li><p><%="I'm a former Big 4 Consultant and worked for companies like Apple and Meta"%></p></li>
-                <li><p><%="I studied Information Systems, Game Design and Animation (I made this website)"%></p></li>
-                <li><p><%="I'm a gamer, mediocre guitarist and a sucker for a good Pixar movie"%></p></li>
-            </ul>
-            <div class="about-cta-button">
-              <a href="#" class="cta-button">Get Started Now</a>
-            </div>
-
-          </div>
-          <%= image_tag 'hi.jpg', alt: 'Matt Cruz', class: 'hero-image' %>
+      <div class="about-headline-image-wrapper">
+        <%= image_tag 'me.png', alt: 'Matt Cruz', class: 'about-image' %>
+        <div class="about-headline-container">
+          <h2><%="Hi I'm Matt"%> </h2>
+          <h3>And I know you can do this.</h3>
         </div>
+      </div>
+      <div class="about-text-container">
+        <h3>And I know you can do this</h3>
+        <h4><%="I'm not here to sell you on the latest fad diet."%></h4> 
+        <h4><%="I'm not here to put you on a 6 week beach body workout plan you'll never touch again."%></h4>
+        <h4><%="I'm here to get you results that will LAST."%></h4>
+        <p>Some things you should know about me</p>
+
+        <ul>
+            <li><p><%="I'm a NASM certified personal trainer"%></p></li>
+            <li><p><%="I'm an amateur natural bodybuilder"%></p></li>
+            <li><p><%="I've been lifting for the past 10 years"%></p></li>
+            <li><p><%="I was a collegiate offensive tackle at Carnegie Mellon University"%></p></li>
+            <li><p><%="I'm a former Big 4 Consultant and worked for companies like Apple and Meta"%></p></li>
+            <li><p><%="I studied Information Systems, Game Design and Animation (I made this website)"%></p></li>
+            <li><p><%="I'm a gamer, mediocre guitarist and a sucker for a good Pixar movie"%></p></li>
+        </ul>
+        <div class="about-cta-button">
+          <a href="#" class="cta-button">Get Started Now</a>
+        </div>
+      </div>
 
     </section>
 
@@ -159,9 +162,15 @@
           </div>
     
           <div class="testimonial">
-            <%= image_tag 'sample2.jpeg', alt: "Client 2's Transformation" %>
-            <p><strong>Client 2</strong></p>
-            <p>Matts guidance changed my life!</p>
+            <%= image_tag 'freddie.jpg', alt: "Freddie" %>
+            <p><strong>Fred</strong></p>
+            <p><%="I was struggling keeping a consistent and efficient half marathon training schedule and was not too confident about my running progress. Also because of my busy schedule, I did not have time to research more to improve my training.<br><br>
+            
+            Matt answered all my questions well and honestly and I appreciated him monitoring the fitness data I regularly sent him. <br><br>
+            
+            My goal was to complete my second half marathon within a short training period. I finished the half marathon and improved my training routines. <br><br>
+            
+            I really appreciated our regular touch base calls and for Matt being flexible to my busy schedule. I also value a lot that I get to reconnect and work closely with an old friend to help me accomplish my personal goals and I enjoy supporting Matt's amazing business.".html_safe %></p>
           </div>
           
           <div class="testimonial">
