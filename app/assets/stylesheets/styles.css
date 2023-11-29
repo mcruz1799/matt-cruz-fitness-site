@@ -5,7 +5,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     margin: 0;
-    padding: 0;
+    /* padding-top: 10vh; */
   }
 
 html{
@@ -19,6 +19,7 @@ header {
   background-color: white;
   margin: 0;
   position: sticky;
+  z-index: 1000;
   top: 0;
 }
 
@@ -84,7 +85,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh; 
+    height: 100vh; 
     /* border: 5px solid green; */
   }
 
@@ -407,7 +408,7 @@ header {
 
 .testimonials {
   /* background-color: #fff; */
-  padding: 10% 5%;
+  padding: 5% 5%;
 }
 
 .testimonials h2 {
