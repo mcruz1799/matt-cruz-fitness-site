@@ -3,14 +3,16 @@ $(document).ready(function () {
     $('.slick-carousel').slick({
       slidesToShow: 2, // Show two slides on larger screens
       slidesToScroll: 2, // Scroll two slides at a time on larger screens
-      // Add other options you already have...
+      dots: true,
+      infinite: true,
+      adaptiveHeight: true,
       responsive: [
         {
           breakpoint: 768,
           settings: {
             slidesToShow: 1, // Show one slide at a time on mobile screens
             slidesToScroll: 1, // Scroll one slide at a time on mobile screens
-            // Add other options for mobile screens...
+            arrows: false
           },
         },
       ],
@@ -28,23 +30,20 @@ $(document).ready(function () {
           slidesToShow: 1, // Show one slide at a time on mobile screens
           slidesToScroll: 1, // Scroll one slide at a time on mobile screens
           dots: true,
-          prevArrow: false,
-          nextArrow: false,
+          arrows: false,
           infinite: true,
           adaptiveHeight: true,
         });
       } else {
         // Reinitialize Slick Carousel with default settings for larger screens
+        // Reinitialize Slick Carousel with default settings for larger screens
         $('.slick-carousel').slick('unslick');
         $('.slick-carousel').slick({
-          slidesToShow: 2, // Show two slides on larger screens
-          slidesToScroll: 2, // Scroll two slides at a time on larger screens
-          dots: true,
-          prevArrow: false,
-          nextArrow: false,
-          infinite: true,
           slidesToShow: 2,
           slidesToScroll: 2,
+          dots: true,
+          arrows: true,
+          infinite: true,
           adaptiveHeight: true,
         });
       }

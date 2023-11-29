@@ -405,9 +405,10 @@ header {
 
 
 /* Testimonials Section Styles */
+
 .testimonials {
-  background-color: #fff;
-  padding: 80px 20px;
+  /* background-color: #fff; */
+  padding: 10% 5%;
 }
 
 .testimonials h2 {
