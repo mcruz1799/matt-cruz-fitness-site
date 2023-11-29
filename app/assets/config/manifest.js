@@ -1,4 +1,5 @@
 //= link_tree ../images
+//= link_directory ../javascripts .js
 //= link_directory ../stylesheets .css
-//= link slick.css
-//= link slick-theme.css
+//= link application.css
+//= link_tree ../../../vendor/assets/slick-1.8.1/slick

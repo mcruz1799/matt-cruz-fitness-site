@@ -8,248 +8,29 @@
   
   <link rel="stylesheet" href="<%= asset_path('styles.css') %>">
   <link rel="stylesheet" href="<%= asset_path('slick.css') %>">
-  <link rel="stylesheet" type="text/css" href="<%= asset_path('slick-theme.css') %>">
-  
-
-
+  <link rel="stylesheet" type="text/css" href="<%= asset_path('slick-theme.css')%>"%>
   
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script>
-  $(document).ready(function () {
-    // Initialize Slick Carousel with default settings
-    $('.slick-carousel').slick({
-      slidesToShow: 2, // Show two slides on larger screens
-      slidesToScroll: 2, // Scroll two slides at a time on larger screens
-      // Add other options you already have...
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1, // Show one slide at a time on mobile screens
-            slidesToScroll: 1, // Scroll one slide at a time on mobile screens
-            // Add other options for mobile screens...
-          },
-        },
-      ],
-    });
   
-    // Update Slick Carousel settings for mobile screens
-    function updateSlickSettings() {
-      var windowWidth = $(window).width();
+  <script src="<%= asset_path('slick-init.js') %>"></script>
   
-      // Check if the screen width is less than or equal to 768 pixels (adjust as needed)
-      if (windowWidth <= 768) {
-        // Update Slick Carousel settings for mobile
-        $('.slick-carousel').slick('unslick'); // Unslick to destroy the initial instance
-        $('.slick-carousel').slick({
-          slidesToShow: 1, // Show one slide at a time on mobile screens
-          slidesToScroll: 1, // Scroll one slide at a time on mobile screens
-          dots: true,
-          prevArrow: false,
-          nextArrow: false,
-          infinite: true,
-          adaptiveHeight: true,
-        });
-      } else {
-        // Reinitialize Slick Carousel with default settings for larger screens
-        $('.slick-carousel').slick('unslick');
-        $('.slick-carousel').slick({
-          slidesToShow: 2, // Show two slides on larger screens
-          slidesToScroll: 2, // Scroll two slides at a time on larger screens
-          dots: true,
-          prevArrow: false,
-          nextArrow: false,
-          infinite: true,
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          adaptiveHeight: true,
-        });
-      }
-    }
-  
-    // Call the function on page load
-    updateSlickSettings();
-  
-    // Call the function whenever the window is resized
-    $(window).resize(function () {
-      updateSlickSettings();
-    });
-  });
-
-  </script>
-  
-
   <title>Matt Cruz Fitness</title>
 
 </head>
 
-
-
 <body>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <%= image_tag 'me.png', alt: 'Matt Cruz', class: 'hero-image' %>
-      <div class="hero-text-container">
-        <h1>Get Lean, Get Strong, Get Ripped </h1>
-        <p>Oh, and you can still have fun doing it.</p>
-        <a href="#" class="cta-button">Take Action TODAY</a>
-      </div>
-    </section>
+  <%= render 'home/partials/hero'%>
     
 
-    <!-- Pain Points Section -->
-    <section class="pain">
-      <div class="pain-content">
+  <%= render 'home/partials/pain'%>
 
-        <div class="pain-text-container">
-          <h1>Do any of these problems sound familiar?</h1>
-          <ul>
-              <li><p><%="Low energy levels"%></p></li>
-              <li><p><%="Just winging it during your workouts"%></p></li>
-              <li><p><%="Inconsistent diet"%></p></li>
-              <li><p><%="A big belly that makes you feel insecure"%></p></li>
-              <li><p><%="Stress and anxiety taking over"%></p></li>
-              <li><p><%="Occasional fits of rage directed at the current state of the Marvel Cinematic Universe"%></p></li>
-          </ul>
-        </div>
-        <%= image_tag 'sad.png', alt: 'Matt Cruz', class: 'pain-image' %>        
+  <%= render 'home/partials/about'%>
 
-      </div>
-      <div class="pain-headers-container">
-        <h3>Have you felt so overwhelmed it's tough to keep going?</h2>
-        <h4><%="Well don't give up just yet!"%></h2>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="about-headline-image-wrapper">
-        <%= image_tag 'me.png', alt: 'Matt Cruz', class: 'about-image' %>
-        <div class="about-headline-container">
-          <h2><%="Hi I'm Matt"%> </h2>
-          <h3>And I know you can do this.</h3>
-        </div>
-      </div>
-      <div class="about-text-container">
-        <h3>And I know you can do this</h3>
-        <h4><%="I'm not here to sell you on the latest fad diet."%></h4> 
-        <h4><%="I'm not here to put you on a 6 week beach body workout plan you'll never touch again."%></h4>
-        <h4><%="I'm here to get you results that will LAST."%></h4>
-        <p>Some things you should know about me</p>
-
-        <ul>
-            <li><p><%="I'm a NASM certified personal trainer"%></p></li>
-            <li><p><%="I'm an amateur natural bodybuilder"%></p></li>
-            <li><p><%="I've been lifting for the past 10 years"%></p></li>
-            <li><p><%="I was a collegiate offensive tackle at Carnegie Mellon University"%></p></li>
-            <li><p><%="I'm a former Big 4 Consultant and worked for companies like Apple and Meta"%></p></li>
-            <li><p><%="I studied Information Systems, Game Design and Animation (I made this website)"%></p></li>
-            <li><p><%="I'm a gamer, mediocre guitarist and a sucker for a good Pixar movie"%></p></li>
-        </ul>
-        <div class="about-cta-button">
-          <a href="#" class="cta-button">Get Started NOW</a>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- What's In Store Section '-->
-    <section class="whats-in-store">
-      <div class="container">
-        <h2>Here's What's In Store For You</h2>
-        <ul>
-          <li>The Mindset of a Winner</li>
-          <li>Confidence through Knowledge</li>
-          <li>No more belly fat, big arms and a superhero chest</li>
-          <li>Motivation, accountability, support and guidance</li>
-          <li>A flexible workout schedule catered to your lifestyle</li>
-          <li>Reasons why the soft reboot will be a good thing for the MCU</li>
-        </ul>
-      </div>
-    </section>
+  <%= render 'home/partials/whats-in-store'%>
   
-    <!-- Testimonials Section with Slick Carousel -->
-    <section id="testimonials" class="testimonials">
-      <div class="container">
-        <h2>What My Clients Say</h2>
-    
-        <!-- Slick Carousel -->
-        <div class="slick-carousel">
-          <div class="testimonial">
-            <%= image_tag 'johnny.jpg', alt: "Client 1's Transformation" %>
-            <p><strong>Johnny</strong></p>
-            <p>Before starting I often felt pretty sluggish and depressed. My lack of diet strategy and habitual exercise left me brain-fogged and I found it hard to get to the gym since I didn’t feel confident in structuring my own workouts.</p>
-
-            <p>I was looking for a push and some educated guidance and I feel like MCF’s program has been exactly what I needed. The confidence boost of going into every day with a plan has been a great motivator.</p>
-
-            <p>Coach Matt is also there literally every step of the way, super responsive, helpful, and flexible to answer my questions, meet my needs, and tailor the program specifically to me.</p>
-
-            <p>I’m not gonna lie, I’ve been seeing results a lot faster and more evidently than I ever have before. I never tried to take pictures of my body at different timepoints, one because it felt vain and two because I was pessimistic about seeing any results. Matt has been persistent with getting me to track myself regularly, which has helped me notice changes in body shape which have been really amazing to see. Even more importantly, I’m loving my improved physical and mental performance as a result of consistent workouts and intelligent eating. I’ve felt more confident than I possibly ever have. All that’s to say I’m proud of where I’m at already and I’m only just over a month in.</p>
-
-          </div>
-    
-          <div class="testimonial">
-            <%= image_tag 'freddie.jpg', alt: "Freddie" %>
-            <p><strong>Fred</strong></p>
-            <p><%="I was struggling keeping a consistent and efficient half marathon training schedule and was not too confident about my running progress. Also because of my busy schedule, I did not have time to research more to improve my training.<br><br>
-            
-            Matt answered all my questions well and honestly and I appreciated him monitoring the fitness data I regularly sent him. <br><br>
-            
-            My goal was to complete my second half marathon within a short training period. I finished the half marathon and improved my training routines. <br><br>
-            
-            I really appreciated our regular touch base calls and for Matt being flexible to my busy schedule. I also value a lot that I get to reconnect and work closely with an old friend to help me accomplish my personal goals and I enjoy supporting Matt's amazing business.".html_safe %></p>
-          </div>
-          
-          <div class="testimonial">
-            <%= image_tag 'sample2.jpeg', alt: "Client 2's Transformation" %>
-            <p><strong>Client 3</strong></p>
-            <p>Matts guidance changed my life!</p>
-          </div>
-
-          <div class="testimonial">
-            <%= image_tag 'sample2.jpeg', alt: "Client 2's Transformation" %>
-            <p><strong>Client 4</strong></p>
-            <p>Matts guidance changed my life!</p>
-          </div>
-
-          <div class="testimonial">
-            <%= image_tag 'sample2.jpeg', alt: "Client 2's Transformation" %>
-            <p><strong>Client 5</strong></p>
-            <p>Matts guidance changed my life!</p>
-          </div>
-          <!-- Add more testimonials as needed -->
-    
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Form Section -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2>Contact Us</h2>
-    
-        <%= form_with(url: contact_us_create_path, method: :post) do |form| %>
-          <div>
-            <%= form.label :full_name, 'Full Name' %>
-            <%= form.text_field :full_name %>
-          </div>
-    
-          <div>
-            <%= form.label :email, 'Email' %>
-            <%= form.email_field :email %>
-          </div>
-    
-          <div>
-            <%= form.label :reason, 'Reason for Contact' %>
-            <%= form.text_area :reason %>
-          </div>
-    
-          <%= form.submit 'Submit' %>
-        <% end %>
-      </div>
-    </section>
+  <%= render 'home/partials/testimonials'%>
 
 </body>
 </html>
