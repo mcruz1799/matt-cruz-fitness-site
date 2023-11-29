@@ -23,6 +23,12 @@ header {
   top: 0;
 }
 
+footer{
+  padding: 2% 5%;
+  background-color: #797979;
+  color: white;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
