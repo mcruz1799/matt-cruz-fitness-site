@@ -329,7 +329,7 @@ footer{
   }
 
   .about-cta-button{
-    border: 5px solid black;
+    /* border: 5px solid black; */
     padding: 10px;
     background-color: #f00;
     border-radius: 5px;
@@ -339,6 +339,12 @@ footer{
     margin: 0 auto;
 
     box-sizing: border-box;
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .about-cta-button:hover{
+    transform: translateY(-5px);
   }
 
   .about-cta-button a{
@@ -467,7 +473,6 @@ footer{
 }
 
 .testimonial-cta-button{
-  border: 5px solid black;
   padding: 10px;
   background-color: #f00;
   border-radius: 5px;
@@ -477,6 +482,11 @@ footer{
   margin: 0 auto;
 
   box-sizing: border-box;
+  transition: transform .3s ease-in-out;
+}
+
+.testimonial-cta-button:hover{
+  transform: translateY(-5px);
 }
 
 .testimonial-cta-button a{
