@@ -460,6 +460,25 @@ footer{
   display: block; /* Remove any default inline styles that might affect alignment */
 }
 
+.testimonial-cta-button{
+  border: 5px solid black;
+  padding: 10px;
+  background-color: #f00;
+  border-radius: 5px;
+  font-size: 1.7em;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+.testimonial-cta-button a{
+  color: white;
+  text-decoration: none;
+  margin: 0;
+}
+
 
 
 
