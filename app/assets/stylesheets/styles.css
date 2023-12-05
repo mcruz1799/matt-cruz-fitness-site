@@ -71,6 +71,11 @@ footer{
   border-radius: 5px;
   text-decoration: none;
   white-space: nowrap;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar .cta-button:hover{
+  transform: translate(5px)
 }
   
  /* Media Query for Mobile Responsiveness */
@@ -127,10 +132,11 @@ footer{
     text-decoration: none;
     border-radius: 10px;
     font-size: 2em;
+    transition: transform .3s ease-in-out;
   }
 
   .hero .cta-button:hover{
-    color: goldenrod;
+    transform: translateY(-5px);
   }
 
    /* Media Query for Mobile Screens */
