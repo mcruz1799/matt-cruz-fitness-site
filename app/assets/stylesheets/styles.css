@@ -83,8 +83,6 @@ footer{
   
   /* Hero Section Styles */
 
-
-
   .hero {
     padding: 0 10%;
     margin: 0;
@@ -103,7 +101,6 @@ footer{
 
   }
 
-  
   .hero h1 {
     font-size: 4em; /* Adjust the font size as needed */
     margin-bottom: 2%;
@@ -191,7 +188,7 @@ footer{
 
 
   .pain-image {
-    height: 40%;
+    height: 80%;
     align-self: center;
     margin-left: 5%
   }
