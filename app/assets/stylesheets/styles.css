@@ -326,7 +326,8 @@ footer{
     padding-left: 5%;
   }
   .about-text-container{
-    height: 100vh;
+    /* height: 100vh; */
+    margin-bottom: 5%;
   }
 
   .about h2{
@@ -344,10 +345,10 @@ footer{
     display: none;
   }
   .about h4{
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
   .about p{
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .about-cta-button{
