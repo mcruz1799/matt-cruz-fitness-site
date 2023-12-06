@@ -231,6 +231,7 @@ footer{
   .pain-headers-container{
     /* margin: auto; */
     text-align: center;
+    margin-top: 5%;
     /* border: 5px dashed blue; */
 
   }
@@ -275,7 +276,6 @@ footer{
       max-height: 100%;
     }
     .pain-headers-container{
-
     }
     .pain h1 {
       /* font-size: 1.5em; Adjust the font size as needed */
