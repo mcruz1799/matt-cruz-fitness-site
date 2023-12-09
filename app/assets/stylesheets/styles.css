@@ -507,7 +507,7 @@ footer{
   font-size: 1.7em;
   max-width: 500px;
   text-align: center;
-  margin: 0 auto;
+  margin: 5% auto;
 
   box-sizing: border-box;
   transition: transform .3s ease-in-out;
