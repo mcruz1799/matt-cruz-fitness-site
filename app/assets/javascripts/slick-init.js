@@ -6,13 +6,16 @@ $(document).ready(function () {
       dots: true,
       infinite: true,
       adaptiveHeight: true,
+      arrows:false,
+      autoplay: true,
       responsive: [
         {
           breakpoint: 768,
           settings: {
             slidesToShow: 1, // Show one slide at a time on mobile screens
             slidesToScroll: 1, // Scroll one slide at a time on mobile screens
-            arrows: false
+            arrows: false,
+            autoplay: false
           },
         },
       ],
@@ -33,6 +36,7 @@ $(document).ready(function () {
           arrows: false,
           infinite: true,
           adaptiveHeight: true,
+          autoplay: false,
         });
       } else {
         // Reinitialize Slick Carousel with default settings for larger screens
@@ -42,9 +46,10 @@ $(document).ready(function () {
           slidesToShow: 2,
           slidesToScroll: 2,
           dots: true,
-          arrows: true,
+          arrows: false,
           infinite: true,
           adaptiveHeight: true,
+          autoplay: true
         });
       }
     }
